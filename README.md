@@ -1,3 +1,5 @@
-# figuras-geometricas
+# Figuras geometricas
+
+---
 
 #### By Geraldine Díaz Barreto💜
