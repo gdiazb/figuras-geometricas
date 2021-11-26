@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figuras geométricas | Curso práctico de JS</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">Figuras geométricas</h1>
+    <p class="header__txt">Este es el primer taller del curso práctivo de JavaScript</p>
+  </header>
+
+  <article class="card">
+    <h2 class="card__subtitle">Calcula el area y perimetro de un cuadrado</h2>
+    <form>  
+      <label class="form__label" for="inputCuadrado">Escribe cuanto mide cada lado de tu cuadrado</label>
+      <input class="form__input" id="inputCuadrado" type="number">
+      <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
+      <button type="button" onclick="calcularAreaCuadrado()" >Calcular el area</button>
+    </form>
+      <p>Resultado: <span id="result"></span></p> 
+  </article>
+
+  <article class="card">
+    <h2 class="card__subtitle">Calcula el area y perimetro de un tiangulo</h2>
+    <form>
+      <div class="form__grid">
+        <div class="form__grid-item">
+          <label class="form__label" for="inputTrianguloUno">Escribe el primer lado de tu triangulo</label>
+          <input class="form__input" id="inputTrianguloUno" type="number">
+        </div>
+        <div class="form__grid-item">
+          <label class="form__label" for="inputTrianguloDos">Escribe el segundo lado de tu triangulo</label>
+          <input class="form__input" id="inputTrianguloDos" type="number">
+        </div>
+        <div class="form__grid-item">
+          <label class="form__label" for="inputTrianguloBase">Escribe la base de tu triangulo</label>
+          <input class="form__input" id="inputTrianguloBase" type="number">
+        </div>
+      </div>
+      <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
+      <button type="button" onclick="calcularAreaTriangulo()" >Calcular el area</button>
+    </form>
+      <p>Resultado: <span id="result"></span></p> 
+  </article>
+
+  <script src="./figuras.js"></script>
+</body>
+</html>
