@@ -19,40 +19,38 @@
       <label class="form__label" for="inputCuadrado">Escribe cuanto mide cada lado de tu cuadrado</label>
       <input class="form__input" id="inputCuadrado" type="number">
       <footer class="form__footer">
-        <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
-        <button type="button" onclick="calcularAreaCuadrado()" >Calcular el area</button>
+        <button class="form__btn" type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
+        <button class="form__btn" type="button" onclick="calcularAreaCuadrado()" >Calcular el area</button>
       </footer>
     </form>
-      <p>Resultado: <span id="result"></span></p> 
+      <p class="form__result">Resultado: <span id="result"></span></p> 
   </article>
 
   <article class="card">
     <h2 class="card__subtitle">Calcula el area y perimetro de un tiangulo</h2>
     <form>
-      <div class="form__grid">
-        <div class="form__grid-item">
-          <label class="form__label" for="inputTrianguloUno">Escribe el primer lado de tu triangulo</label>
-          <input class="form__input" id="inputTrianguloUno" type="number">
-        </div>
-        <div class="form__grid-item">
-          <label class="form__label" for="inputTrianguloDos">Escribe el segundo lado de tu triangulo</label>
-          <input class="form__input" id="inputTrianguloDos" type="number">
-        </div>
-        <div class="form__grid-item">
-          <label class="form__label" for="inputTrianguloBase">Escribe la base de tu triangulo</label>
-          <input class="form__input" id="inputTrianguloBase" type="number">
-        </div>
-        <div class="form__grid-item">
-          <label class="form__label" for="inputTrianguloAltura">Escribe la altura de tu triangulo</label>
-          <input class="form__input" id="inputTrianguloAltura" type="number">
-        </div>
+      <div class="form__grid-item">
+        <label class="form__label" for="inputTrianguloUno">Escribe el primer lado de tu triangulo</label>
+        <input class="form__input" id="inputTrianguloUno" type="number">
+      </div>
+      <div class="form__grid-item">
+        <label class="form__label" for="inputTrianguloDos">Escribe el segundo lado de tu triangulo</label>
+        <input class="form__input" id="inputTrianguloDos" type="number">
+      </div>
+      <div class="form__grid-item">
+        <label class="form__label" for="inputTrianguloBase">Escribe la base de tu triangulo</label>
+        <input class="form__input" id="inputTrianguloBase" type="number">
+      </div>
+      <div class="form__grid-item">
+        <label class="form__label" for="inputTrianguloAltura">Escribe la altura de tu triangulo</label>
+        <input class="form__input" id="inputTrianguloAltura" type="number">
       </div>
       <footer class="form__footer">
-        <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
-        <button type="button" onclick="calcularAreaTriangulo()" >Calcular el area</button>
+        <button class="form__btn" type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
+        <button class="form__btn" type="button" onclick="calcularAreaTriangulo()" >Calcular el area</button>
       </footer>
     </form>
-      <p>Resultado: <span id="resultTriangulo"></span></p> 
+      <p class="form__result">Resultado: <span id="resultTriangulo"></span></p> 
   </article>
 
   <script src="./figuras.js"></script>

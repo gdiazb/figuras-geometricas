@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f8f8f8;
   font-family: 'Roboto', sans-serif;
@@ -36,7 +40,7 @@ body {
   box-shadow: 5px 5px 13px 0px #eeeeee;
 }
   .card__subtitle {
-    margin: 0 0 10px;
+    margin: 0 0 20px;
   }
 
 .form__grid {
@@ -45,18 +49,38 @@ body {
 }
 
   .form__grid-item {
-    margin: 0 20px;
+    margin: 0 0 20px;
   }
 
   .form__label {
     display: block;
+    margin-bottom: 16px;
   }
 
   .form__input {
     display: block;
     width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #006eff;
   }
 
   .form__footer {
-    margin: 10px 0;
+    margin: 16px 0;
+    text-align: center;
+  }
+
+  .form__result {
+    margin: 20px 0;
+  }
+
+  .form__btn {
+    background-color: #006eff;
+    border: none;
+    appearance: none;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 25px;
+    min-width: 160px;
+    cursor: pointer;
   }
